@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <label for="nama">Nama</label>
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukan Nama Anda"
+      /><br /><br />
+
+      <label for="nama1">Nama Terisi</label>
+      <input
+        type="text"
+        id="nama"
+        name="nama"
+        placeholder="Masukan Nama Anda"
+        value="Udin"
+        required
+      /><br /><br />
+
+      <label for="password1">Password</label>
+      <input
+        type="password"
+        id="password1"
+        name="password1"
+        placeholder="Masukan Password Anda"
+        required
+      /><br /><br />
+
+      <label for="usia1">Usia</label>
+      <input
+        type="number"
+        id="usia1"
+        name="usia1"
+        placeholder="Masukkan Usia Anda"
+        min="15"
+        max="60"
+        value="30"
+        size="30"
+        required
+      /><br /><br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Masukan Email Anda"
+        value="aw@gmail.com"
+      /><br /><br />
+
+      <input type="hidden" name="id_user" value="123" />
+
+      <label for="tanggal_lahir">Tanggal Lahir</label>
+      <input
+        type="date"
+        id="tanggal_lahir"
+        name="tanggal_lahir"
+        min="2000-01-01"
+        max="2024-08-19"
+        value="2024-08-18"
+        required
+      /><br /><br />
+
+      <label for="waktu_selesai">Waktu Selesai Terisi</label>
+      <input
+        type="time"
+        id="waktu_selesai1"
+        name="waktu_selesai"
+        min="09:00"
+        max="17:00"
+        value="12:00"
+        refuired
+      /><br /><br />
+
+      <label for="lampiran">Lampiran</label>
+      <input
+        type="file"
+        id="lampiran"
+        name="lampiran"
+        multiple
+        accept="image/*"
+        required
+      /><br /><br />
+
+      <input type="checkbox" name="hobi" value="membaca" checked /> Membaca
+      <input type="checkbox" name="hobi" value="menulis" /> Menulis
+      <input type="checkbox" name="hobi" value="memasak" disabled /> Memasak
+      /><br /><br />
+      <input type="radio" name="hobi" value="membaca" checked /> Membaca
+      <input type="radio" name="hobi" value="menulis" /> Menulis
+      <input type="radio" name="hobi" value="memasak" disabled /> Memasak /><br /><br />
+
+      <label for="negara">Negara</label>
+      <select name="negara1" id="negara1" multiple size="2">
+        <option value="" disabled>Pilih Negara</option>
+        <option value="indonesia" selected>Indonesia</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="singapura">Singapura</option>
+      </select>
+      <br /><br />
+
+      <label for="komentar">Komentar</label>
+      <textarea
+        name="komentar"
+        id="komentar"
+        placeholder="Isi Komentar Anda"
+        rows="5"
+        cols="30"
+        required
+      >
+      ini komentar
+      </textarea
+      >
+      <br /><br />
+
+      <button type="submit">Kirim</button>
+      <button type="reset" disabled>Reset</button>
+    </form>
+  </body>
+</html>
